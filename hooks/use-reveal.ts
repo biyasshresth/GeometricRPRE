@@ -6,11 +6,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-/**
- * Reveals children marked with [data-reveal] as the section scrolls
- * into view. Elements rise, fade, and un-rotate in a stagger for a
- * layered, depth-driven entrance.
- */
 export function useReveal<T extends HTMLElement>() {
   const ref = useRef<T>(null)
 

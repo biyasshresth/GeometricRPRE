@@ -22,7 +22,6 @@ export default function HeroSection() {
         { y: 0, opacity: 1, rotateX: 0, duration: 1.2, ease: 'power4.out', stagger: 0.14, delay: 0.2 },
       )
 
-      // Content drifts up and fades as user scrolls past hero
       gsap.to('[data-hero-content]', {
         y: -120,
         opacity: 0,
